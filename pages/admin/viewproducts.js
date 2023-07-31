@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, ThemeProvider } from "@mui/material";
-import ProductPerfomance from "../../src/components/dashboard/ProductPerfomance";
+// import ProductPerfomance from "../../src/components/dashboard/ProductPerfomance";
 
 
 const Viewproducts = () => {
