@@ -6,6 +6,7 @@ import Head from "next/head";
 import Script from "next/script";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/router";
 
 const Checkout = ({ cart, clearCart, addToCart, removeFromCart, subTotal }) => {
   const [name, setName] = useState("");
@@ -17,6 +18,7 @@ const Checkout = ({ cart, clearCart, addToCart, removeFromCart, subTotal }) => {
   const [city, setCity] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [user, setUser] = useState({ value: null });
+  const router = useRouter()
 
   useEffect(() => {
     const myuser = JSON.parse(localStorage.getItem("myuser"));
