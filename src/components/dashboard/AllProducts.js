@@ -91,7 +91,9 @@ const AllProducts = ({ products }) => {
                   <Box> */}
 
                     <Typography>
-                      <img src={product.img} alt="" className="w-20 h-20" />
+                     <picture>
+                     <img src={product.img} alt="" className="w-20 h-20" />
+                     </picture>
                     </Typography>
 
                     {/* </Box>
