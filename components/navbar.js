@@ -108,7 +108,14 @@ const Navbar = ({
           <Link href="/">
             <a>
               {" "}
-              <img src="https://logos-world.net/wp-content/uploads/2022/06/Bolt-Logo.png" alt="" width={80} height={10} />
+              <picture>
+                <img
+                  src="https://logos-world.net/wp-content/uploads/2022/06/Bolt-Logo.png"
+                  alt=""
+                  width={80}
+                  height={10}
+                />
+              </picture>
             </a>
           </Link>
         </div>
@@ -139,7 +146,9 @@ const Navbar = ({
         <div className="cart absolute mx-5 right-0  font-bold  top-4 cursor-pointer flex space-x-2 md:space-x-4">
           <Link href="/admin">
             <a>
-              <button className="bg-emerald-600 px-2 lg:py-2 py-1 ease-in-out  rounded-md text-sm text-white">Admin</button>
+              <button className="bg-emerald-600 px-2 lg:py-2 py-1 ease-in-out  rounded-md text-sm text-white">
+                Admin
+              </button>
             </a>
           </Link>
 

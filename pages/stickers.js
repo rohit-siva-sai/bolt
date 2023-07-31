@@ -22,11 +22,13 @@ const Stickers = ({ products }) => {
                 >
                   <div className="lg:w-1/5 md:w-1/2 p-4 w-full shadow-md lg:mx-6 lg:my-2 ">
                     <a className="block relative  rounded overflow-hidden">
+                      <picture>
                       <img
                         alt="ecommerce"
                         className="md:h-[40vh] block h-[32vh] m-auto"
                         src={products[item].img}
                       />
+                      </picture>
                     </a>
                     <div className="mt-4 text-center">
                       <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1 ">

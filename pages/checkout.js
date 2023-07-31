@@ -25,7 +25,7 @@ const Checkout = ({ cart, clearCart, addToCart, removeFromCart, subTotal }) => {
       setEmail(myuser.email);
       fetchData(myuser.token);
     }
-  }, []);
+  }, [router]);
 
   const fetchData = async (token) => {
     let data = { token: token };

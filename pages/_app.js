@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
       setUser({value: myuser.token, email: myuser.email })
     }
     setKey(Math.random())
-  }, [router.query]);
+  }, [router]);
 
   const saveCart = (newCart) => {
     localStorage.setItem("cart", JSON.stringify(newCart));
